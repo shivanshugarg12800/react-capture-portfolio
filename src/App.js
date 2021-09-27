@@ -1,9 +1,13 @@
 import React from "react";
-import AboutUs from "./pages/AboutUs";
+// Global styles
+import GlobalStyled from "./components/GlobalStyled";
 
+// components
+import AboutUs from "./pages/AboutUs";
 function App() {
   return (
     <div className="App">
+      <GlobalStyled />
       <AboutUs />
     </div>
   );
