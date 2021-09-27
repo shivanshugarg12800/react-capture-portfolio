@@ -1,5 +1,20 @@
 import { createGlobalStyle } from "styled-components";
+/* 1. with the styled components we can add styling to the different elements of the jsx be it 
+   any div, img, button inside the js file only using the syntax
+                const StyledComponentName = styled.<element> `
+                
+                `;
 
+    2. or we can also make a global style file like this and include all the css in a component
+
+    3. If we want to use a pre-written styles of any component
+        const styledComponentName = styled( componentName whose styles you want to use) `
+        
+        
+        `;
+
+
+*/
 const GlobalStyled = createGlobalStyle`
 
 *{
@@ -9,6 +24,7 @@ const GlobalStyled = createGlobalStyle`
 }
 body{
   background: #1b1b1b;
+  font-family: 'Inter', sans-serif;
 }
 button{
     font-weight: bold;
@@ -18,6 +34,7 @@ button{
     border : 3px solid #23d997;
     background: transparent;
     color: white;
+    font-family: 'Inter', sans-serif;
     transition : all 0.3s ease;
     &:hover{
         background-color: #23d997;
